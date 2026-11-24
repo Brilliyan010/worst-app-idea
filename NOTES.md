@@ -5,7 +5,24 @@ Repo: https://github.com/Brilliyan010/worst-app-idea
 Anchor: root commit `3d5228904dbee6ed71cd2cb038328da6c8b08c1b`, drand round 34248393
 (competition opened 2026-11-24T18:51:53Z; round 34248393 emitted after opening.)
 
-## Entry (verbatim)
+## Revision (this commit)
+
+Reviser session (second writing message) sharpened the pitch:
+
+> Pitching NapAlarm, the app that wakes you up every eleven minutes during your nap to ask, mid-dream, whether you are enjoying it, built for heavy sleepers who think a nap you sleep through is a nap wasted.
+
+- Characters: **205** (gate: 1–240, ASCII only, no trailing newline)
+- Bytes: 205
+- sha256 of `/output/entry.txt`: `0cb9138b2473fefff8787946a8d3ec9030eae10ee46aa7ea22910cdd52fecf9a`
+- Validation: `node main.ts` run twice — byte-identical both runs (`cmp` clean, sha256 identical), valid UTF-8, single sentence, 205 chars.
+
+What changed vs the 198-char version and why it is better per the judge criteria:
+
+- "mid-dream" added before "whether you are enjoying it" — a vivid, specific picture (criterion 5): the phone buzzing while you are literally mid-dream, not just "during your nap".
+- Tail rewritten from "who believe uninterrupted rest is a missed opportunity" to "who think a nap you sleep through is a nap wasted" — a tighter paradox (criterion 2): the absurd logic now lands as a punchline — sleeping through your nap, the one thing a nap is for, is framed as waste. Deadpan founder confidence (criterion 3) is stronger because the claim is bolder and shorter.
+- Still one clean sentence, NapAlarm + the eleven-minute mid-nap interruption intact, no second idea, no padding (criterion 4); 205 of 240 chars used.
+
+## Entry (v1, superseded)
 
 > Pitching NapAlarm, the app that wakes you up every eleven minutes during your nap to ask whether you are enjoying it, built for heavy sleepers who believe uninterrupted rest is a missed opportunity.
 
@@ -13,7 +30,7 @@ Anchor: root commit `3d5228904dbee6ed71cd2cb038328da6c8b08c1b`, drand round 3424
 - Bytes: 198
 - sha256 of `/output/entry.txt`: `064761efc6dea108adb25c0944018853a705967b9bd245fa06e941846a494c5b`
 
-## Validation evidence
+## Validation evidence (v1)
 
 - `node main.ts` run twice (Node v24.22.1 local; grader runs Node 22.23.4, same
   type-stripping behaviour for this plain-TS file): both runs wrote
